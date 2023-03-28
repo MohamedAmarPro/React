@@ -18,7 +18,6 @@ function App() {
     },
   ]
   let pokemon = pokemonList[0];
-  console.log(pokemon);
   return(
     <>
       <PokemonCard data={pokemon}/>
