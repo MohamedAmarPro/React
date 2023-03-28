@@ -1,16 +1,7 @@
 
-function PokemonCard() {
-  const pokemonList = [
-    {
-      name: "bulbasaur",
-      imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    },
-    {
-      name: "mew",
-    },
-  ];
-  let pokemon = pokemonList[0]
+function PokemonCard(data) {
+
+
 
   // function displayPoke(pokemon) {
   //   if (pokemon.imgSrc) {
@@ -18,11 +9,10 @@ function PokemonCard() {
   // } else {
   //   return <p>???</p>
   // } }
-
     return (
     <div>
       <figure className="poke">
-        { pokemon.imgSrc ? <img src={pokemon.imgSrc}/> : <p> ??? </p>}
+        { data.data.imgSrc ? <img src={data.data.imgSrc}/> : <p> ??? </p>}
       </figure>
     </div>
   )
