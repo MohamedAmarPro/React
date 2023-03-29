@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-function PokemonCard(data) {
+function PokemonCard({data}) {
 
-
+console.log(data)
 
   // function displayPoke(pokemon) {
   //   if (pokemon.imgSrc) {
@@ -13,19 +13,17 @@ function PokemonCard(data) {
     return (
     <div>
       <figure className="poke">
-        { data.data.imgSrc ? <img src={data.data.imgSrc}/> : <p> ??? </p>}
+        { data.imgSrc ? <img src={data.imgSrc}/> : <p> ??? </p>}
       </figure>
     </div>
   )
 }
-PokemonCard.propTypes = {
-  data : PropTypes.shape({
-  data : PropTypes.shape({
+PokemonCard.propsTypes = {
+  props: PropTypes.shape({
       name : PropTypes.string.isRequired,
-      img : PropTypes.string.isRequired,
-    })
-}).isRequired,
-};
+      imgSrc : PropTypes.string.isRequired,
+    }).isRequired,
+}
 
 
 
