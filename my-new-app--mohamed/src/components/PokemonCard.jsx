@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 
 function PokemonCard({data}) {
 
-console.log(data)
 
   // function displayPoke(pokemon) {
   //   if (pokemon.imgSrc) {
