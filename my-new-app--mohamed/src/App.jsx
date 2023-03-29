@@ -39,9 +39,7 @@ function App() {
     alert("Hello Pokemon Trainer")
   }, []);
 
-  if (pokemon.name === "pikachu" ) {
-    alert("PIKAKACHU")
-  }
+
   return (
     <>
       <NavBar
@@ -49,7 +47,7 @@ function App() {
         pokemonIndex={pokemonIndex}
         setPokemonIndex={setPokemonIndex}
       />
-      <PokemonCard data={pokemon} />
+
     </>
   );
 }
